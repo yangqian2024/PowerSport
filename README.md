@@ -8,6 +8,8 @@
 
 ![image](https://user-images.githubusercontent.com/89080542/158492230-0ec331fe-bbba-4d18-889e-6309781959a9.png)
 
+代码网址： https://gitee.com/yizen-little-monk/powermini
+
 ## 技术运用
 - 本项目使用微信小程序平台进行开发。
 - 使用腾讯专门的小程序云开发技术，云资源包含云函数，数据库，带宽，存储空间，定时器等，资源配额价格低廉，无需域名和服务器即可搭建。
