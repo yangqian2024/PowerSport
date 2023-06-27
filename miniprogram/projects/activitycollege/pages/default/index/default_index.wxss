@@ -1,0 +1,354 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+page {
+    background-color: var(--projectColor);
+}
+
+.main {
+    padding: 0rpx 0rpx 100rpx;
+    background-color: var(--projectColor);
+}
+
+.up {
+    width: 100%;
+    background-color: var(--projectCompareColor);
+    padding: 0 !important;
+}
+
+.up image {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    margin-top: -50rpx;
+    position: relative;
+    padding: 0 20rpx;
+}
+
+
+
+.menu .inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20rpx 0rpx;
+    background-color: #fff;
+    border-radius: 30rpx;
+    height: 230rpx;
+    z-index: 999;
+}
+
+.menu .inner .item {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180rpx;
+}
+
+.menu .inner .item .item-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu .inner .item .item-inner .img {
+    background-color: #f2f2f2;
+    width: 100rpx;
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    border-top-right-radius: 20rpx !important;
+    border-bottom-left-radius: 20rpx !important;
+}
+
+
+.menu .inner .item .item-inner .img image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.menu .inner .item .item-inner .title {
+    font-size: 26rpx;
+    color: var(--projectCompareColor);
+    font-weight: bold;
+    margin-top: 10rpx;
+}
+
+.down {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10rpx 0rpx;
+    z-index: 9999;
+    position: relative;
+}
+
+.scroll-x {
+    width: 100%;
+    padding: 0 28rpx;
+}
+
+.scroll-list {
+    width: 100%;
+    margin-top: 10rpx;
+    white-space: nowrap;
+}
+
+.scroll-list .item {
+    display: inline-block;
+    padding: 0;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    border-top-right-radius: 30rpx !important;
+    border-bottom-left-radius: 30rpx !important;
+    overflow: hidden;
+    width: 220rpx;
+    box-shadow: 1rpx 8rpx 8rpx rgba(230, 225, 226, 0.6);
+    margin-bottom: 30rpx;
+    position: relative;
+    background-color: #fff;
+    border-top-right-radius: 50rpx;
+}
+
+.scroll-list .item .cover {
+    height: 190rpx;
+    width: inherit;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-list .item .cover image {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+
+.scroll-list .title {
+    width: 100%;
+    font-size: 26rpx;
+    padding: 10rpx 10rpx;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.scroll-list .star {
+    width: 100%;
+    font-size: 24rpx;
+    padding: 5rpx 20rpx;
+    margin-bottom: 10rpx;
+    color: #999 !important;
+}
+
+.tab-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10rpx 30rpx 10rpx;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+.tab-line .item {
+    font-size: 34rpx;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.tab-line .item1 {
+    font-size: 24rpx;
+    color: #ddd;
+    padding: 6rpx 24rpx;
+    border-radius: 30rpx;
+}
+
+
+
+.tab-line1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10rpx 30rpx 10rpx;
+    align-items: flex-end;
+    margin-top: 20rpx;
+    margin-bottom: 30rpx;
+}
+
+.tab-line1 .item {
+    font-size: 30rpx;
+    color: #ddd;
+    position: relative;
+    padding: 0 30rpx;
+}
+
+.tab-line1 .item.cur {
+    font-size: 34rpx;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tab-line1 .item.cur:after {
+    width: 20%;
+    position: absolute;
+    bottom: -16rpx;
+    left: 50%;
+    height: 8rpx;
+    content: '';
+    border-radius: 30%;
+    background-color: var(--projectCompareColor);
+    transform: translateX(-50%);
+}
+
+.list {
+    width: 100%;
+    padding: 0rpx 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.list .item {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 20rpx 20rpx 0rpx 0;
+    position: relative;
+    border-radius: 10rpx;
+    border-top-right-radius: 30rpx !important;
+    border-bottom-left-radius: 30rpx !important;
+    margin-bottom: 60rpx;
+    position: relative;
+}
+
+.list .item .left {
+    width: 200rpx;
+    height: 250rpx;
+    border-radius: 10rpx;
+    margin-right: 25rpx;
+    margin-top: -40rpx;
+    border-top-right-radius: 30rpx !important;
+    border-bottom-left-radius: 30rpx !important;
+}
+
+.list .item .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20rpx;
+}
+
+.list .item .right .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list .item .right .top .title {
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20rpx;
+    margin-top: 14rpx;
+}
+
+.list .item .right .top .desc {
+    width: 100%;
+    font-size: 26rpx;
+    color: #999;
+    margin-bottom: 10rpx;
+}
+
+.list .item .right .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24rpx;
+}
+
+.list .item .right .line .join {
+    font-size: 24rpx !important;
+    background-color: var(--greyLight);
+    color: #999;
+    border-radius: 10rpx;
+    line-height: 2;
+    padding: 0 25rpx;
+    border-top-right-radius: 20rpx !important;
+    border-bottom-left-radius: 20rpx !important;
+}
+
+.list .item .right .line .join.comm {
+    background-color: var(--projectCompareColor);
+    color: #fff;
+}
+
+.list .item .right .line .users {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.list .item .right .line .users .pic-group {
+    display: flex;
+    padding: 0 10rpx 0 0rpx;
+    align-items: center;
+}
+
+.list .item .right .line .users .pic-group .pic {
+    width: 48rpx !important;
+    height: 48rpx !important;
+}
+
+.list .item .right .line .users .pic-group .pic {
+    margin-left: -20rpx;
+    border: 4rpx solid #fff;
+    vertical-align: middle;
+}
+
+.list .item .right .line .users .pic-group .pic:first-child {
+    margin-left: 0rpx;
+}
+
+.list .item .right .line .users .num {
+    font-size: 24rpx;
+    color: #bbb;
+}
+
+.tabs .tab-menu.cur {
+    color: #000 !important;
+    font-size: 30rpx !important;
+}
+
+
+.tabs .tab-menu.cur:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0rpx;
+    width: 50%;
+    height: 8rpx !important;
+    background-color: var(--projectColor) !important;
+    transform: translateX(-50%);
+    border-radius: 20rpx !important;
+}
+
+.shadow-project,
+.scroll-list .item {
+    box-shadow: unset;
+}
+
+.loading {
+    color: #ddd !important;
+}

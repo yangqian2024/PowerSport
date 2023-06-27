@@ -1,0 +1,126 @@
+{
+    "pages": [
+        "projects/activitycollege/pages/default/index/default_index",
+        "projects/activitycollege/pages/about/index/about_index",
+        "projects/activitycollege/pages/search/search",
+        "projects/activitycollege/pages/my/index/my_index",
+        "projects/activitycollege/pages/my/reg/my_reg",
+        "projects/activitycollege/pages/my/edit/my_edit",
+        "projects/activitycollege/pages/my/foot/my_foot",
+        "projects/activitycollege/pages/my/fav/my_fav",
+        "projects/activitycollege/pages/news/index/news_index",
+        "projects/activitycollege/pages/news/detail/news_detail",
+        "projects/activitycollege/pages/news/cate1/news_cate1",
+        "projects/activitycollege/pages/admin/news/list/admin_news_list",
+        "projects/activitycollege/pages/admin/news/add/admin_news_add",
+        "projects/activitycollege/pages/admin/news/edit/admin_news_edit",
+        "projects/activitycollege/pages/admin/setup/about/admin_setup_about",
+        "projects/activitycollege/pages/admin/setup/about_list/admin_setup_about_list",
+        "projects/activitycollege/pages/admin/setup/qr/admin_setup_qr",
+        "projects/activitycollege/pages/admin/index/home/admin_home",
+        "projects/activitycollege/pages/admin/index/login/admin_login",
+        "projects/activitycollege/pages/admin/content/admin_content",
+        "projects/activitycollege/pages/admin/mgr/log/admin_log_list",
+        "projects/activitycollege/pages/admin/mgr/edit/admin_mgr_edit",
+        "projects/activitycollege/pages/admin/mgr/list/admin_mgr_list",
+        "projects/activitycollege/pages/admin/mgr/add/admin_mgr_add",
+        "projects/activitycollege/pages/admin/mgr/pwd/admin_mgr_pwd",
+        "projects/activitycollege/pages/admin/user/list/admin_user_list",
+        "projects/activitycollege/pages/admin/user/detail/admin_user_detail",
+        "projects/activitycollege/pages/admin/user/export/admin_user_export",
+        "projects/activitycollege/pages/activity/index/activity_index",
+        "projects/activitycollege/pages/activity/detail/activity_detail",
+        "projects/activitycollege/pages/activity/join/activity_join",
+        "projects/activitycollege/pages/activity/my_join_list/activity_my_join_list",
+        "projects/activitycollege/pages/activity/my_join_detail/activity_my_join_detail",
+        "projects/activitycollege/pages/activity/my_join_self/activity_my_join_self",
+        "projects/activitycollege/pages/activity/calendar/activity_calendar",
+        "projects/activitycollege/pages/activity/join_list/activity_join_list",
+        "projects/activitycollege/pages/admin/activity/join_list/admin_activity_join_list",
+        "projects/activitycollege/pages/admin/activity/self/admin_activity_self",
+        "projects/activitycollege/pages/admin/activity/export/admin_activity_export",
+        "projects/activitycollege/pages/admin/activity/scan/admin_activity_scan",
+        "projects/activitycollege/pages/admin/activity/list/admin_activity_list",
+        "projects/activitycollege/pages/admin/activity/add/admin_activity_add",
+        "projects/activitycollege/pages/admin/activity/edit/admin_activity_edit",
+        "projects/activitycollege/pages/comment/list/comment_list",
+        "projects/activitycollege/pages/comment/add/comment_add",
+        "projects/activitycollege/pages/enroll/index/enroll_index",
+        "projects/activitycollege/pages/enroll/detail/enroll_detail",
+        "projects/activitycollege/pages/enroll/do/enroll_do",
+        "projects/activitycollege/pages/enroll/my_join_list/enroll_my_join_list",
+        "projects/activitycollege/pages/enroll/my_user_list/enroll_my_user_list",
+        "projects/activitycollege/pages/admin/enroll/list/admin_enroll_list",
+        "projects/activitycollege/pages/admin/enroll/add/admin_enroll_add",
+        "projects/activitycollege/pages/admin/enroll/edit/admin_enroll_edit",
+        "projects/activitycollege/pages/admin/enroll/join_list/admin_enroll_join_list",
+        "projects/activitycollege/pages/admin/enroll/export/admin_enroll_export",
+        "projects/activitycollege/pages/product/detail/product_detail",
+        "projects/activitycollege/pages/product/index/product_index",
+        "projects/activitycollege/pages/admin/product/list/admin_product_list",
+        "projects/activitycollege/pages/admin/product/add/admin_product_add",
+        "projects/activitycollege/pages/admin/product/edit/admin_product_edit",
+        "cmpts/public/form/form_set/field/form_set_field",
+        "cmpts/public/form/form_show/content/form_show_content",
+        "pages/test1/test1"
+    ],
+    "window": {
+        "backgroundColor": "#f1f1f1",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#5B02FF",
+        "navigationBarTitleText": "大学生活动社交小程序",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "custom": false,
+        "backgroundColor": "#FFFFFF",
+        "color": "#999999",
+        "selectedColor": "#5B02FF",
+        "list": [
+            {
+                "pagePath": "projects/activitycollege/pages/default/index/default_index",
+                "text": "首页",
+                "iconPath": "/projects/activitycollege/images/tabbar/home.png",
+                "selectedIconPath": "/projects/activitycollege/images/tabbar/home_cur.png"
+            },
+            {
+                "pagePath": "projects/activitycollege/pages/news/index/news_index",
+                "text": "通知",
+                "iconPath": "/projects/activitycollege/images/tabbar/product.png",
+                "selectedIconPath": "/projects/activitycollege/images/tabbar/product_cur.png"
+            },
+            {
+                "pagePath": "projects/activitycollege/pages/activity/index/activity_index",
+                "text": "活动",
+                "iconPath": "/projects/activitycollege/images/tabbar/enroll.png",
+                "selectedIconPath": "/projects/activitycollege/images/tabbar/enroll_cur.png"
+            },
+            {
+                "pagePath": "projects/activitycollege/pages/enroll/index/enroll_index",
+                "text": "打卡",
+                "iconPath": "/projects/activitycollege/images/tabbar/checkin.png",
+                "selectedIconPath": "/projects/activitycollege/images/tabbar/checkin_cur.png"
+            },
+            {
+                "pagePath": "projects/activitycollege/pages/my/index/my_index",
+                "text": "我的",
+                "iconPath": "/projects/activitycollege/images/tabbar/my.png",
+                "selectedIconPath": "/projects/activitycollege/images/tabbar/my_cur.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+        }
+	},
+	"requiredPrivateInfos": [
+		"chooseLocation"
+	],
+    "usingComponents": {
+        "cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+        "cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+        "cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+    },
+    "sitemapLocation": "sitemap.json"
+}

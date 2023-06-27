@@ -1,0 +1,133 @@
+<view class="main">
+	<view class="up">
+		<image mode="widthFix" src="../../../images/home.jpg" />
+	</view>
+	<view class="menu">
+		<view class="inner ">
+			<view bindtap="url"  data-type="relaunch"  data-url="../../news/index/news_index" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/1.png" />
+					</view>
+					<view class="title">通知公告</view>
+				</view>
+			</view>
+			<view bindtap="url" data-url="../../product/index/product_index" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/2.png" />
+					</view>
+					<view class="title">多彩校园</view>
+				</view>
+			</view>
+			<view bindtap="url" data-url="../../activity/calendar/activity_calendar" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/3.png" />
+					</view>
+					<view class="title">活动日历</view>
+				</view>
+			</view>
+			<view bindtap="url" data-type="relaunch" data-url="../../enroll/index/enroll_index" class="item">
+				<view class="item-inner">
+					<view class="img">
+						<image src="../../../images/menu/4.png" />
+					</view>
+					<view class="title">打卡任务</view>
+				</view>
+			</view>
+		</view>
+		<view class="line1"></view>
+	</view>
+
+	<view class="down">
+		<view class="tab-line">
+			<view class="item">推荐打卡</view>
+			<view bindtap="url" data-url="../../enroll/index/enroll_index" data-type="relaunch" class="item1">全部</view>
+		</view>
+
+		<view wx:if="{{!enrollList}}" class="margin-top load loading text-l load-project"></view>
+
+		<!--横向拖动 Begin-->
+		<view class="scroll-x">
+			<scroll-view scroll-x="{{true}}" class="scroll-list">
+				<view class="item" wx:for="{{enrollList}}" wx:key="key" bindtap="url" data-url="../../enroll/detail/enroll_detail?id={{item._id}}">
+					<view class="cover">
+						<image lazy-load="{{true}}" class="loading shadow-project" src="{{item.ENROLL_OBJ.cover[0]}}" mode="aspectFill"></image>
+					</view>
+
+					<view class="title text-cut">{{item.ENROLL_TITLE}}</view>
+					<view class="star">
+						<text>{{item.ENROLL_USER_CNT}}人{{item.ENROLL_JOIN_CNT}}次打卡</text>
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+		<!--横向拖动 END-->
+
+		<view class="tab-line1">
+			<view bindtap="bindCurTap" data-cur="new" class="item {{cur=='new'?'cur':''}}">最新活动</view>
+			<view bindtap="bindCurTap" data-cur="hot" class="item {{cur=='hot'?'cur':''}}">最热活动</view>
+		</view>
+
+		<!-- List Begin -->
+		<view wx:if="{{!newList||!hotList}}" class="margin-top load loading text-l load-project"></view>
+
+		<view class="list" wx:if="{{cur=='new'}}">
+			<view wx:for="{{newList}}" wx:key="key" class="item" bindtap="url" data-url="../../activity/detail/activity_detail?id={{item._id}}">
+				<image class="left loading shadow-project" mode="aspectFill" lazy-load="{{true}}" src="{{item.ACTIVITY_OBJ.cover[0]}}" />
+				<view class="right">
+					<view class="top">
+						<view class="title content-cut-one">{{item.ACTIVITY_TITLE}}</view>
+						<view class="desc content-cut-one"><text class="icon-time margin-right-xxs"></text>{{item.time}}</view>
+					</view>
+					<view class="line">
+						<view class="users">
+							<view class="pic-group">
+								<image wx:for="{{item.ACTIVITY_USER_LIST}}" wx:for-index="idx" wx:key="key" wx:if="{{idx<3}}" wx:for-item="itm" class="pic round loading" mode="aspectFill" lazy-load="{{true}}" src="{{itm.USER_PIC}}" />
+							</view>
+							<text wx:if="{{item.ACTIVITY_JOIN_CNT}}" class="num">+{{item.ACTIVITY_JOIN_CNT}}人报名</text>
+							<text wx:else class="num">{{item.ACTIVITY_JOIN_CNT}}人报名</text>
+						</view>
+						<view class="join {{item.statusDesc=='报名中'?'comm':''}}">
+							<text wx:if="{{item.statusDesc=='报名中'}}">报名中</text>
+							<text wx:else>{{item.statusDesc}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="list" wx:if="{{cur=='hot'}}">
+			<view wx:for="{{hotList}}" wx:key="key" class="item" bindtap="url" data-url="../../activity/detail/activity_detail?id={{item._id}}">
+				<image class="left loading shadow-project" mode="aspectFill" lazy-load="{{true}}" src="{{item.ACTIVITY_OBJ.cover[0]}}" />
+				<view class="right">
+					<view class="top">
+						<view class="title content-cut-two">{{item.ACTIVITY_TITLE}}</view>
+						<view class="desc content-cut-one"><text class="icon-time margin-right-xxs"></text>{{item.time}}</view>
+					</view>
+					<view class="line">
+						<view class="users">
+							<view class="pic-group">
+								<image wx:for="{{item.ACTIVITY_USER_LIST}}" wx:for-index="idx" wx:key="key" wx:if="{{idx<3}}" wx:for-item="itm" class="pic round loading" mode="aspectFill" lazy-load="{{true}}" src="{{itm.USER_PIC}}" />
+							</view>
+							<text wx:if="{{item.ACTIVITY_JOIN_CNT}}" class="num">+{{item.ACTIVITY_JOIN_CNT}}人报名</text>
+							<text wx:else class="num">{{item.ACTIVITY_JOIN_CNT}}人报名</text>
+						</view>
+						<view class="join {{item.statusDesc=='报名中'?'comm':''}}">
+							<text wx:if="{{item.statusDesc=='报名中'}}">报名中</text>
+							<text wx:else>{{item.statusDesc}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- List END -->
+	</view>
+	<view style="height: 200rpx;"></view>
+</view>
+
+<block wx:if="{{skin.IS_SUB}}">
+	<import src="../../tpls/menu_tpl.wxml" />
+	<template is="menuTpl" data="{{curMenu:'home_index',returnHome:false}}" />
+</block>

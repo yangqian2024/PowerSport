@@ -1,0 +1,10 @@
+{
+	"usingComponents": { 
+        "cmpt-detail": "/cmpts/biz/detail/detail_cmpt",
+        "cmpt-simple-list": "/cmpts/public/simple_list/simple_list_cmpt" 
+	},
+	"enablePullDownRefresh": true,  
+	"navigationBarTextStyle": "white",
+	"navigationBarBackgroundColor": "#5B02FF",
+	"navigationBarTitleText": "" 
+}

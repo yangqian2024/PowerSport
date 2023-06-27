@@ -1,0 +1,145 @@
+@import "../../../style/skin.wxss";
+
+
+
+.main {
+	padding: 0;
+}
+
+.main .upside {
+	background-color: rgba(75, 148, 231, 0.1);
+	height: 450rpx;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+    padding-top: 30rpx;
+    border-bottom-left-radius: 40rpx;
+    border-bottom-right-radius: 40rpx;
+}
+
+.main .upside .upImg {
+	height: inherit;
+	width: 100%;
+	position: absolute;
+	top: 0;
+    left: 0;
+    border-radius: inherit;
+}
+
+.main .upside .user-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.main .upside .user-bar .avatar {
+	height: 130rpx;
+	width: 130rpx;
+	border: 4rpx solid #fff;
+	font-size: 80rpx;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, .8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main .upside .user-bar .avatar image {
+	height: 70rpx;
+	width: 70rpx;
+}
+
+.main .upside .user-bar .detail {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.main .upside .user-bar .detail .name {
+	width: 100%;
+	font-size: 36rpx;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-top: 10rpx;
+}
+
+.main .upside .user-bar .detail .desc {
+	width: 100%;
+	font-size: 26rpx;
+	margin-top: 0rpx;
+	color: #fff;
+	text-align: center;
+}
+
+.main .record {
+	width: 100%;
+	position: relative;
+	margin-top: -60rpx;
+}
+
+.main .record .inner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #fff;
+	padding: 40rpx 0rpx; 
+}
+
+.main .record .inner .item {
+	display: flex;
+	align-items: center;
+}
+
+.main .record .inner .mid {
+	height: 40rpx;
+	width: 2rpx;
+	border-left: 2rpx dashed #ccc;
+}
+
+
+.main .record .inner text {
+	font-size: 36rpx;
+}
+
+.main .record .inner .item .title {
+	font-size: 30rpx;
+	font-weight: bold;
+	margin-left: 10rpx;
+	color: #333;
+}
+
+.main .down {
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20rpx 20rpx !important;
+	position: relative;
+}
+
+.main .comm-list .item.arrow::before,
+.main .comm-list .item .content .item-icon {
+	color: #0E9489;
+}
+
+.main .site-footer {
+	width: 100%;
+	align-self: flex-end;
+}
+
+.main .upside-shadow {
+	box-shadow: unset
+} 

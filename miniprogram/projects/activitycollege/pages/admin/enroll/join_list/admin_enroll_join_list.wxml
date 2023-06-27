@@ -1,0 +1,56 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-grey"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-grey"></view>
+
+<block wx:if="{{isAdmin&&isLoad}}">
+
+	<cmpt-comm-list doDate="{{true}}" startDate="{{startDate}}" endDate="{{endDate}}" source='admin' id="cmpt-comm-list" type="admin-enroll-join-list" search="{{search||''}}" _params="{{_params}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="admin/enroll_join_list" topBottom="50" placeholder="搜索" sortMenusDefaultIndex="0" bind:list="bindCommListCmpt">
+
+		<view slot="searchEnd">
+
+		</view>
+
+		<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条符合条件记录
+
+		</view>
+
+        		<!-- List Begin -->
+		<view class="list">
+			<view class="item" wx:for="{{dataList.list}}" wx:key="k">
+				<image class="left loading" mode="aspectFill" lazy-load="{{true}}" src="{{item.user.USER_PIC}}"></image>
+				<view class="right">
+					<view class="title">
+						<text class="name text-project">{{item.user.USER_NAME}} <text class="text-grey text-s">({{item.user.USER_MOBILE}})</text></text>
+						<text class="date">{{item.ENROLL_JOIN_ADD_TIME}}</text>
+					</view>
+					<view class="content"><text>{{item.ENROLL_JOIN_OBJ.content}}</text></view>
+
+					<view class="album">
+						<image bindtap="url" data-type="img" data-imgs="{{item.ENROLL_JOIN_OBJ.img}}" data-url="{{itm}}" wx:for="{{item.ENROLL_JOIN_OBJ.img}}" wx:key="key1" wx:for-item="itm" class="loading  img{{item.ENROLL_JOIN_OBJ.img.length}}" mode="aspectFill" lazy-load="{{true}}" src="{{itm}}"></image>
+				</view>
+
+					<view class="oprt">
+						<view bindtap="bindDelTap"  data-idx="{{index}}" data-id="{{item._id}}" class="tag text-red light mid radius text-orange"><text class="icon-delete"></text>删除</view>
+			</view>
+
+
+				</view>
+
+
+			</view>
+
+
+		<!--load begin-->
+		<import src="../../../../../../tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+		</view>
+		<!-- List END -->
+
+ 
+
+
+	</cmpt-comm-list>
+
+
+</block>

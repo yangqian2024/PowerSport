@@ -1,0 +1,122 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	padding: 0rpx !important;
+}
+
+.list {
+	width: 100%;
+	padding: 0rpx 20rpx;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item {
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	padding: 20rpx 20rpx;
+	overflow: hidden;
+	position: relative; 
+	margin-bottom: 30rpx; 
+}
+
+.list .item .left {
+	width: 210rpx;
+	height: 230rpx;
+	border-radius: 10rpx;
+	margin-right: 25rpx; 
+	border-radius: 10% 35% 73% 10% / 10% 100% 50% 10% ;
+}
+
+.list .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.list .item .right .top {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item .right .top .title {
+	width: 100%;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20rpx;
+	margin-top: 14rpx;
+}
+
+.list .item .right .top .desc {
+	width: 100%;
+	font-size: 26rpx;
+	color: #999;
+	margin-bottom: 10rpx;
+}
+
+.list .item .right .line {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 24rpx;
+}
+
+.list .item .right .line .join {
+	font-size: 24rpx !important;
+	background-color: var(--greyLight);
+	color: #999;
+	border-radius: 10rpx;
+	line-height: 2;
+    padding: 0 30rpx;  
+    border-top-right-radius: 20rpx!important;
+    border-bottom-left-radius: 20rpx!important;
+}
+
+.list .item .right .line .join.comm {
+	background-color: var(--projectCompareColor);
+	color: #fff;
+}
+
+.list .item .right .line .users {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.list .item .right .line .users .pic-group {
+	display: flex;
+	padding: 0 10rpx 0 0rpx;
+	align-items: center;
+}
+
+.list .item .right .line .users .pic-group .pic {
+	width: 48rpx !important;
+	height: 48rpx !important;
+}
+
+.list .item .right .line .users .pic-group .pic {
+	margin-left: -20rpx;
+	border: 4rpx solid #fff;
+	vertical-align: middle;
+}
+
+.list .item .right .line .users .pic-group .pic:first-child {
+	margin-left: 0rpx;
+}
+
+.list .item .right .line .users .num {
+	font-size: 24rpx;
+	color: #bbb;
+}
+
+.tabs .tab-menu.cur {
+	color: #000 !important;
+	font-size: 30rpx !important;
+}
+
+ 

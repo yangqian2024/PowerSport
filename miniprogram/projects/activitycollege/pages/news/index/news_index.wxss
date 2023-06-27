@@ -1,0 +1,12 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+
+.comm-list-box .item-leftbig1 .leftbig-left {
+    width: 240rpx;
+    height: 160rpx;
+    border-radius: 10rpx !important;
+    overflow: hidden;
+    border-top-right-radius: 30rpx !important;
+    border-bottom-left-radius: 30rpx !important;
+}
