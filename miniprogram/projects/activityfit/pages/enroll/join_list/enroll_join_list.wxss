@@ -1,0 +1,12 @@
+@import "../detail/enroll_detail.wxss";
+
+.number-line {
+	width:100%;
+	text-align: center;
+	padding:10rpx 0;
+	font-size: 28rpx;
+}
+
+.list .item { 
+	margin-bottom: 20rpx; 
+}
